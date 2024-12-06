@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Courses - My Learning Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="courses.css"> 
+  <script src="courses.js"></script>Optional custom styles -->
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">My Learning Platform</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="course.html">Courses</a> <!-- Active Link -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Page Section -->
+    <section id="courses" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Courses</h2>
+
+            <!-- Course Category Filters -->
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-primary mx-2" data-category="all">All Courses</button>
+                    <button class="btn btn-outline-primary mx-2" data-category="web-dev">Web Development</button>
+                    <button class="btn btn-outline-primary mx-2" data-category="data-science">Data Science</button>
+                    <button class="btn btn-outline-primary mx-2" data-category="design">UI/UX Design</button>
+                </div>
+            </div>
+
+            <!-- Course List -->
+            <div class="row g-4">
+                <!-- Course 1 -->
+                <div class="col-md-4 course-item" data-category="web-dev">
+                    <div class="card shadow">
+                        <img src="images/course1.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Master Web Development</h5>
+                            <p class="card-text">Learn how to build modern websites and web applications from scratch using HTML, CSS, JavaScript, and more.</p>
+                            <p><strong>Instructor:</strong> John Doe</p>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="col-md-4 course-item" data-category="data-science">
+                    <div class="card shadow">
+                        <img src="images/course2.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Science with Python</h5>
+                            <p class="card-text">Explore the world of data science with Python. Learn data analysis, machine learning, and AI concepts.</p>
+                            <p><strong>Instructor:</strong> Sarah Lee</p>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="col-md-4 course-item" data-category="design">
+                    <div class="card shadow">
+                        <img src="images/course3.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Design Fundamentals</h5>
+                            <p class="card-text">Learn the basics of UI/UX design and how to create beautiful, user-friendly interfaces using Figma.</p>
+                            <p><strong>Instructor:</strong> Jane Smith</p>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="col-md-4 course-item" data-category="web-dev">
+                    <div class="card shadow">
+                        <img src="images/course4.jpg" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Advanced Front-End Development</h5>
+                            <p class="card-text">Take your front-end skills to the next level with advanced JavaScript, React, and modern web tools.</p>
+                            <p><strong>Instructor:</strong> Mike Johnson</p>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Courses... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Optional Custom JS -->
+    <script src="courses.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearnEasy - Personalized Learning Platform for a variety of online courses in web development, data science, and more.">
+    <meta name="keywords" content="Online Learning, Courses, Web Development, Data Science, Machine Learning">
+    <meta name="author" content="LearnEasy">
+    <title>LearnEasy - Personalized Learning Platform</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+   
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">LearnEasy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="course/course.html">Courses</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-primary text-white" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <header id="home" class="hero text-white text-center py-5" 
+    style="background-image: url('boy.jpg'); 
+           background-size: cover; background-position: top; 
+           height: 110vh; display: flex; align-items: center; justify-content: center;">
+
+
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">Unlock Your Learning Potential</h1>
+        <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">Join millions of learners around the world. Find expert-led courses that fit your goals.</p>
+        <form class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="400">
+            <input class="form-control w-50 me-2" type="search" placeholder="Search for courses, instructors, etc." aria-label="Search">
+            <button class="btn btn-warning text-white" type="submit">Search</button>
+        </form>
+    </div>
+</header>
+
+
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">About LearnEasy</h2>
+            <p class="lead text-center mb-4">At LearnEasy, we provide an innovative learning platform that helps individuals enhance their skills through top-quality courses. From coding to creative design, our experts guide you to success in every field.</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">Browse by Categories</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <i class="fas fa-code fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Learn to build dynamic websites and web applications from scratch.</p>
+                            <a href="#" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <i class="fas fa-database fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">Master the skills of data analysis, machine learning, and AI.</p>
+                            <a href="#" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <i class="fas fa-pencil-ruler fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">Design beautiful and user-friendly interfaces with practical tools.</p>
+                            <a href="#" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Platform Features</h2>
+            <div class="row text-center g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <i class="fas fa-play-circle fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Interactive Learning</h5>
+                            <p class="card-text">Engage with interactive lessons, quizzes, and real-time feedback to solidify your learning experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <i class="fas fa-cogs fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Personalized Learning Paths</h5>
+                            <p class="card-text">Get custom learning recommendations based on your interests, progress, and career goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <i class="fas fa-trophy fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Certification & Achievements</h5>
+                            <p class="card-text">Earn certificates and badges upon completion of courses and showcase your skills to the world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center g-4 mt-4">
+                <!-- Feature 4 -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Community & Collaboration</h5>
+                            <p class="card-text">Join study groups, collaborate on projects, and interact with fellow learners and instructors.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 5 -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Mobile Learning</h5>
+                            <p class="card-text">Access courses and learning materials on-the-go with our mobile-friendly platform.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 6 -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <i class="fas fa-headphones-alt fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Expert Instructors</h5>
+                            <p class="card-text">Learn from industry experts and gain insights from real-world projects and case studies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Learners Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-3">"LearnEase helped me land my dream job as a full-stack developer!"</p>
+                            <footer class="blockquote-footer">Jane Doe, Full Stack Developer</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-3">"The courses are well-structured and easy to follow. Highly recommended!"</p>
+                            <footer class="blockquote-footer">John Smith, Data Scientist</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-3">"The instructors are fantastic and very supportive. I learned a lot!"</p>
+                            <footer class="blockquote-footer">Sarah Lee, UI/UX Designer</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <form action="send_email.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 LearnEase. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-secondary" id="backToTop" style="display:none;"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Bootstrap JS & Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        AOS.init();
+
+       
+        document.getElementById("backToTop").onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+     <script src="script.js"></script>
+</body>
+
+</html>
